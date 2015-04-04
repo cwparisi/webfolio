@@ -1,0 +1,372 @@
+body {
+  padding-top: 50px;
+}
+
+/* disable row margins that are conflicting with the container */
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.navbar {
+	background-color: #00726d;
+}
+
+.navbar-brand {
+	color: #fff;
+	font-family: 'Alegreya SC', serif;
+	padding-top: 8px;
+	font-size: 25px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #fff;
+	font-family: 'Alegreya SC', serif;
+	font-size: 16px;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #E0E0E0;
+	border-bottom: 3px solid #E0E0E0;
+}
+
+.navbar-nav {
+	float: right;
+	font-family: 'Alegreya SC', serif;
+}
+
+@media (max-width: 768px){
+	.navbar-nav {
+		text-align: center;
+	 	background-color: #616161;
+		float: none;
+		margin-top: 0px;
+	}
+}
+
+  
+
+#subTitle {
+	font-size: 15px;
+}
+
+/*Flip the image to crop from the top on wide resolutions */
+.flip {
+  -webkit-transform: rotate(180deg);
+  -moz-transform:    rotate(180deg);
+  -ms-transform:     rotate(180deg);
+  -o-transform:      rotate(180deg);
+  transform:         rotate(180deg);
+  /* needed? not sure */
+  zoom: 1;
+}
+
+img.flip {
+  /* if native or declared width of img.scale
+     is less than div.crop-height, this will
+     flipped img left */
+  float: right;
+  /* add clearfix if needed */ 
+}
+
+
+
+.three-blocks {
+	margin-bottom: 30px;
+}
+
+.three-blocks {
+	text-align: center;
+}
+
+.main-section {
+	padding-bottom: 60px;
+	padding-top: 60px;
+}
+
+.section-title {
+	font-family: 'Alegreya SC', serif;
+	color: #6D6D6D;
+	font-size: 30px;
+	padding-top: 0px;
+	margin-top: 0px;
+	text-align: center;
+}
+
+.section-title-line {
+	width: 70px;
+	margin: auto;
+	border-bottom: 4px solid #00726d;
+	margin-bottom: 30px;
+}
+
+
+/* ********** ICON CSS ************ */
+.icon-header {
+	font-family: 'Alegreya SC', serif;
+	color: #00726d;
+	text-align: center;
+}
+
+.icon {
+    width: 140px;
+    height: 140px;
+    position: relative;
+    text-align: center;
+	margin: auto;
+}
+
+.icon-hover {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 26px;
+    overflow: hidden;
+
+    transform: scale(0);
+	-ms-transform: scale(0); 
+    -webkit-transform: scale(0);
+}
+
+.icon:hover .icon-hover {
+	transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1;
+}
+
+/* About Section CSS */
+.about {
+	background-color: #EEEEEE;
+}
+
+
+/* Skill Section CSS */
+.skills {
+	background-color: #fff
+}
+
+.skillIconItem {
+	padding: 10px;
+}
+
+.skillIconImage {
+	width: 50px;
+}
+
+.skillIconTitle {
+	color: #616161;
+	font-size: 18px;
+	padding-left: 5px;
+}
+
+
+/* Portfolio Section CSS */
+.portfolio {
+	background-color: #EEEEEE;
+}
+
+.portfolioItemImage {
+	display: block;
+	margin: auto;
+	border: 3px solid #6D6D6D;
+}
+
+.portfolioItemImage:hover {
+	border: 8px solid #00726d;
+	opacity: 0.6;
+}
+
+.portfolioIconTitle {
+	font-size: 18px;
+	text-align: center;
+}
+
+.portfolio-link {
+	color: #616161;
+}
+
+.portfolio-link:hover {
+	color: #00726d;
+}
+
+/* Contact Section CSS */
+.contact {
+	background-color: #D9D9D9;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	border-top: 1px solid #787878;
+	border-bottom: 50px solid #787878;
+}
+
+.contactIcon {
+	font-size: 80px;
+	color: #6D6D6D;
+	padding: 20px;
+	vertical-align: middle;
+}
+
+.contactIcon:hover {
+	color: #00726d;
+}
+
+.contact-desc {
+	color: #6D6D6D;
+	font-size: 25px;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+@media(max-width: 320px){
+	.portfolioItemImage {
+		width: 250px;
+		height: 150px;
+	}
+}
+
+@media(max-width: 992px){
+	.contactIcon {
+		font-size: 60px;
+	}
+	.contact-desc {
+		font-size: 20px;
+	}
+}
+
+@media(max-width: 321px) {
+	.connect-container {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.email-desc {
+		font-size: 18px;
+	}
+}
+
+
+/* Project Page CSS */
+.project-top {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.project-title {
+	color: #616161;
+	margin-top: 75px;
+}
+
+.budgeter-title {
+	margin-top: 65px;
+}
+
+.diwheel-title {
+	margin-top: 55px;
+}
+
+@media(max-width: 992px){
+	.diwheel-title{
+		margin-top: 5px;
+	}
+
+	.project-title {
+		margin-top: 5px;
+	}
+
+	.budgeter-title {
+		margin-top: 5px;
+	}
+}
+
+.project-image-app {
+	border: 3px solid #00726d;
+	border-radius: 40px;
+}
+
+.project-image {
+	border: 3px solid #00726d;
+}
+
+.project-file {
+	font-size: 20px;
+	color: #616161;
+	padding-bottom: 10px;
+}
+
+.project-file:hover {
+	color: #00726d;
+}
+
+.project-section-title {
+	color: #00726d;
+}
+
+.thumbnail {
+	height: 160px;
+}
+
+.project-thumbnail-img {
+	max-height: 150px;
+}
+
+.project-section {
+	padding-bottom: 50px;
+}
+
+.project-description {
+	max-width: 1000px;
+	font-size: 18px;
+	color: #616161;
+}
+
+.youtubeVideo {
+	width: 420px;
+	height: 300px;
+}
+
+@media (max-width: 320px){
+	.project-image-app {
+		display: block;
+		margin: auto;
+		border: 3px solid #00726d;
+		border-radius: 40px;
+	}
+
+	.project-image {
+		display: block;
+		margin: auto;
+		border: 3px solid #00726d;
+	}
+
+	.project-title {
+		font-size: 25px;
+		text-align: center
+	}
+
+	.project-description {
+		font-size: 15px;
+	}
+
+	.youtubeVideo {
+		width: 290px;
+		height: 200px;
+	}
+}
+
+.reports-table > tbody > tr:hover {
+	background-color: #E0F2F1;
+}
+
+.report-icon {
+	font-size: 25px;
+}
+
+.report-icon:hover {
+	color: #00726d;
+}
+
+
+
